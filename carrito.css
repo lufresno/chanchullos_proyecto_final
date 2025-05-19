@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Ibarra Real Nova', serif;
+  background-image: url('fondo_carrito.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('desktop-bg.jpg');
+  }
+}
+
+.container {
+  background: rgb(249 214 126 / 55%);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 70%;
+  max-width: 400px;
+  font-size: 1.2rem;
+}
+
+
+
+/* Centrar el título */
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Productos alineados izquierda-derecha */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.item-name {
+  font-weight: 500;
+  flex: 1;
+}
+
+.delete-btn {
+  background-color: #D05A31;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 1rem;
+}
+
+/* Centrado solo de los botones de abajo */
+.buttons-footer {
+  text-align: center;
+}
+
+button {
+  background-color: #D05A31;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 5px 0 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
